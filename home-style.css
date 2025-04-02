@@ -1,0 +1,802 @@
+/* General Styles */
+body {
+  font-family: "Poppins", sans-serif; /* Changed to Poppins for consistency */
+  margin: 0;
+  padding: 0;
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+/* Navigation */
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #004080;
+  padding: 15px 50px;
+  color: white;
+}
+.main-nav .logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+.nav-links li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  transition: 0.3s;
+}
+.nav-links li a:hover {
+  text-decoration: underline;
+  color: #ffcc00;
+}
+
+/* Hero Section */
+.hero {
+  background: url("CHAYAMBA PHOTOS.png") no-repeat center center/cover;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+  text-align: center;
+}
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+.hero p {
+  font-size: 1.2rem;
+}
+.hero .btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #ffcc00;
+  color: #004080;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+.hero .btn:hover {
+  background: #e6b800;
+}
+
+/* Section Styles */
+.section {
+  padding: 50px 20px;
+  text-align: center;
+  margin-bottom: 30px; /* Adds space between sections */
+}
+
+/* About Section */
+.about-section {
+  padding: 50px;
+  background: #004080;
+  color: white;
+}
+
+/* Footer */
+footer {
+  background: #002040;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+}
+
+/* Links for Section Navigation */
+.section a {
+  text-decoration: none;
+  color: #004080;
+  font-weight: 500;
+}
+.section a:hover {
+  text-decoration: underline;
+  color: #ffcc00;
+}
+
+/* Specific Section Styles */
+section #about-us {
+  color: #190982;
+}
+section p {
+  color: white;
+  text-align: left;
+  font-size: 20px;
+}
+/* Section Gap Styling */
+section {
+  background-color: gray;
+  padding: 10px;
+  margin: 30px; /* Adds gap between sections */
+  border-radius: 5px; /* Optional: adds rounded corners to sections */
+}
+section h2 {
+  color: rgb(25, 9, 130);
+}
+
+/* Alumni Section - Extra Styling for Images */
+#alumni .row {
+  display: flex;
+  justify-content: space-between;
+}
+
+#alumni .col-md-6 {
+  padding: 20px; /* Adds some spacing around content */
+}
+
+#alumni img {
+  width: 100%; /* Makes images responsive */
+  height: auto;
+  margin-top: 10px;
+}
+
+/* Section Styles */
+.section {
+  padding: 50px 20px;
+  text-align: center;
+  margin-bottom: 30px; /* Adds space between sections */
+  background-color: gray; /* Background for the section */
+  border-radius: 5px; /* Optional rounded corners */
+}
+
+section h2 {
+  color: rgb(25, 9, 130);
+}
+
+section p {
+  color: white;
+  font-size: 20px;
+}
+
+section div #visit,
+button {
+  background-color: #190982;
+  color: white;
+  text-align: center;
+}
+
+/*ABOUT US SECTION */
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  background: #f9f9f9;
+  padding: 3rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  max-width: 1200px;
+  margin: 2rem auto;
+}
+
+.about-content {
+  flex: 1;
+  max-width: 600px;
+}
+
+.about-title {
+  font-size: 2.5rem;
+  color: #0056b3;
+  margin-bottom: 1rem;
+}
+
+.about-text {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+.motto {
+  background: #0056b3;
+  color: white;
+  padding: 1rem;
+  border-radius: 10px;
+  font-size: 1.8rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+.about-image {
+  flex: 1;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.about-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
+  transition: transform 0.5s ease-in-out;
+}
+
+.about-image img:hover {
+  transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-image {
+    max-width: 100%;
+  }
+
+  .motto {
+    margin: 2rem auto;
+    width: 100%;
+  }
+}
+
+/* CONTACT US SECTION */
+.reach-out-container {
+  background: #f9f9f9;
+  padding: 4em 2em;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.reach-out-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.reach-out-wrapper h2 {
+  font-size: 2.5em;
+  color: #005a87;
+  margin-bottom: 1em;
+}
+
+.reach-out-details {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 2em;
+  margin-bottom: 2em;
+}
+
+.reach-out-card {
+  background: white;
+  padding: 1.5em;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  flex: 1;
+  min-width: 250px;
+}
+
+.reach-out-card h3 {
+  color: #005a87;
+  margin-bottom: 0.5em;
+}
+
+.reach-out-card a {
+  color: #005a87;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.reach-out-form {
+  background: white;
+  padding: 2em;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.reach-out-form h3 {
+  color: #005a87;
+  margin-bottom: 1em;
+}
+
+.reach-out-form input,
+.reach-out-form textarea {
+  width: 100%;
+  padding: 1em;
+  margin-bottom: 1em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.reach-out-btn {
+  background: #005a87;
+  color: white;
+  border: none;
+  padding: 1em;
+  border-radius: 5px;
+  font-size: 1.1em;
+  cursor: pointer;
+  width: 100%;
+}
+
+.reach-out-btn:hover {
+  background: #003f5c;
+}
+
+section div #reach-out-description {
+  color: black;
+  text-align: center;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 30px;
+}
+
+section div div p {
+  color: #005a87;
+}
+
+/* CAREER SECTION */
+/* Career Guidance Section */
+.career-section {
+  background: #f4f4f9;
+  padding: 60px 20px;
+  text-align: center;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.career-section .container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.career-section h2 {
+  font-size: 2.5rem;
+  color: #002855;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.career-section p {
+  font-size: 1.2rem;
+  color: #555;
+  max-width: 800px;
+  margin: 0 auto 40px;
+}
+
+.career-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  justify-content: center;
+}
+
+.career-card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.career-card h3 {
+  font-size: 1.5rem;
+  color: #002855;
+  margin-bottom: 10px;
+}
+
+.career-card p {
+  font-size: 1rem;
+  color: #333;
+}
+
+.career-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 20px;
+  background: #002855;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: background 0.3s ease-in-out;
+  margin-top: 20px;
+}
+
+.btn:hover {
+  background: #ffcc00;
+  color: #002855;
+}
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .career-grid {
+    grid-template-columns: 1fr; /* Stack cards on smaller screens */
+  }
+
+  .career-card {
+    margin-bottom: 20px; /* Add space between cards */
+  }
+}
+/* Alumni Section - Extra Styling for Images */
+#alumni .row {
+  display: flex;
+  justify-content: space-between;
+}
+/* PTA Section */
+.pta-section {
+  background: #f4f4f9;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.pta-section .container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.pta-section h2 {
+  font-size: 2.5rem;
+  color: #002855;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.pta-section p {
+  font-size: 1.2rem;
+  color: #555;
+  max-width: 800px;
+  margin: 0 auto 40px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.pta-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  justify-content: center;
+}
+
+.pta-card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.pta-card h3 {
+  font-size: 1.5rem;
+  color: #002855;
+  margin-bottom: 10px;
+}
+
+.pta-card p {
+  font-size: 1rem;
+  color: #333;
+}
+
+.pta-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 20px;
+  background: #002855;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: background 0.3s ease-in-out;
+  margin-top: 20px;
+}
+
+.btn:hover {
+  background: #ffcc00;
+  color: #002855;
+}
+/*   color: #002855;
+ */
+/*   font-size: 1rem;
+ */
+/* Student Life Section */
+.student-life-section {
+  padding: 80px 20px;
+  background-color: #e1f0ff;
+  text-align: center;
+  position: relative;
+}
+
+.student-life-section .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.student-life-section h2 {
+  font-size: 2.8rem;
+  color: #004d7f;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.student-life-section p {
+  font-size: 1.2rem;
+  color: #555;
+  margin: 0 auto 40px;
+  max-width: 900px;
+}
+
+/* Masonry Layout for Cards */
+.student-life-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.student-life-card {
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  position: relative;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.student-life-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+.student-life-card .overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 20px;
+  border-radius: 15px;
+  text-align: left;
+  opacity: 0;
+  transform: translateY(100%);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.student-life-card:hover .overlay {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.student-life-card h3 {
+  font-size: 1.8rem;
+  color: #ffcc00;
+  margin-bottom: 10px;
+}
+
+.student-life-card p {
+  font-size: 1.1rem;
+  color: white;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 20px;
+  background: #004d7f;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-top: 20px;
+  transition: background 0.3s ease-in-out;
+}
+
+.btn:hover {
+  background: #ffcc00;
+  color: #004d7f;
+}
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .student-life-cards {
+    grid-template-columns: 1fr; /* Stack cards on smaller screens */
+  }
+
+  .student-life-card {
+    margin-bottom: 20px; /* Add space between cards */
+  }
+}
+#about-chass,
+#career-guidance,
+#pta,
+#student-life,
+.about-section {
+  color: black !important;
+}
+/* About Section */
+.about-section {
+  background: #f9f9f9;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.about-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.about-content {
+  flex: 1;
+  max-width: 600px;
+  padding: 20px;
+}
+
+.about-title {
+  font-size: 2.8rem;
+  color: #0056b3;
+  margin-bottom: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.about-text {
+  font-size: 1.15rem;
+  line-height: 1.7;
+  color: #555;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+.motto {
+  background: #0056b3;
+  color: white;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 2rem;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 30px;
+}
+
+.about-image {
+  flex: 1;
+  max-width: 500px;
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.about-image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 15px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.about-image img:hover {
+  transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-image {
+    max-width: 100%;
+  }
+
+  .motto {
+    width: 90%;
+    margin: 2rem auto;
+  }
+}
+
+/* Admissions Section */
+.admissions-section {
+  background: #f4f4f9;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.admissions-section .container {
+  max-width: 1100px;
+  margin: 0 auto;
+  background: white; /* Background for the section */
+  padding: 40px;
+  border: 2px solid #002855; /* Border for the section */
+  border-radius: 10px; /* Rounded corners for the section */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.admissions-title {
+  font-size: 2.5rem;
+  color: #002855;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.admissions-text {
+  font-size: 1.2rem;
+  color: #555;
+  max-width: 800px;
+  margin: 0 auto 40px;
+  line-height: 1.8;
+}
+
+.admissions-text p {
+  margin-bottom: 20px;
+}
+
+/* Gallery Section */
+.gallery-section {
+  background: #f4f4f9;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.gallery-section .container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.gallery-title {
+  font-size: 2.5rem;
+  color: #002855;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.gallery-description {
+  font-size: 1.2rem;
+  color: #555;
+  max-width: 800px;
+  margin: 0 auto 40px;
+  line-height: 1.8;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  justify-content: center;
+}
+
+.gallery-item {
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.gallery-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}

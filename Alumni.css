@@ -1,0 +1,184 @@
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+header {
+  background: #005a87;
+  color: white;
+  padding: 1em 0;
+  text-align: center;
+  position: relative;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5em;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  margin: 1em 0 0 0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.5em 1em;
+  transition: background 0.3s;
+}
+
+nav a:hover {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2em 0;
+}
+
+section {
+  background: white;
+  padding: 2em;
+  margin-bottom: 1em;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  color: #005a87;
+}
+
+.btn {
+  background: #005a87;
+  color: white;
+  border: none;
+  padding: 0.5em 1em;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: #003f5c;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 0.5em;
+  margin-bottom: 1em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.chat-box {
+  background: #f9f9f9;
+  padding: 1em;
+  border-radius: 5px;
+  max-height: 400px;
+  overflow-y: auto;
+  border: 1px solid #ccc;
+}
+
+.messages p {
+  padding: 0.5em;
+  border-radius: 5px;
+  margin-bottom: 0.5em;
+}
+
+.chat-bubble {
+  background: #005a87;
+  color: white;
+  padding: 0.5em;
+  border-radius: 8px;
+  margin-bottom: 5px;
+  max-width: 70%;
+}
+
+.search-bar {
+  padding: 0.7em;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.photo-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1em;
+  padding: 1em 0;
+}
+
+.photo-gallery img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  object-fit: cover;
+  height: 200px;
+}
+
+footer {
+  text-align: center;
+  padding: 1em 0;
+  background: #005a87;
+  color: white;
+  margin-top: 1em;
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .photo-gallery {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Additional Features */
+.event-card {
+  background: #fff;
+  padding: 1em;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1em;
+}
+
+.project-card {
+  background: #e1f5fe;
+  padding: 1em;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1em;
+}
+
+.register-form {
+  background: #f9f9f9;
+  padding: 2em;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+section {
+  margin: 30px;
+}
+#motto-alumni {
+  font-size: 20px;
+}

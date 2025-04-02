@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chayamba Secondary School Alumni</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+    />
+    <link rel="stylesheet" href="Alumni.css" />
+    <style></style>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1>Chayamba Secondary School Alumni</h1>
+        <nav>
+          <ul>
+            <li><a href="#chat-room">Chat Room</a></li>
+            <li><a href="#directory">Alumni Directory</a></li>
+            <li><a href="#upcoming-projects">Upcoming Projects</a></li>
+            <li><a href="#completed-projects">Completed Projects</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#register">Register</a></li>
+          </ul>
+        </nav>
+        <p id="motto-alumni">
+          WORK TO EARN: Connecting the past, shaping the future
+        </p>
+      </div>
+    </header>
+
+    <section id="chat-room" class="chat-room">
+      <div class="container">
+        <h2>Chat Room</h2>
+        <div class="chat-box">
+          <div class="messages" id="messages"></div>
+          <textarea
+            id="chat-message"
+            placeholder="Type your message..."
+          ></textarea>
+          <button class="btn" onclick="sendMessage()">Send</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="directory" class="directory">
+      <div class="container">
+        <h2>Alumni Directory</h2>
+        <input type="text" placeholder="Search alumni..." class="search-bar" />
+      </div>
+    </section>
+
+    <section id="gallery" class="gallery">
+      <div class="container">
+        <h2>Gallery</h2>
+        <form id="uploadForm">
+          <input type="file" id="imageUpload" accept="image/*" />
+          <button type="submit" class="btn">Upload Image</button>
+        </form>
+        <div class="photo-gallery" id="photo-gallery"></div>
+      </div>
+    </section>
+    <section id="upcoming-projects" class="upcoming-projects">
+      <div class="container">
+        <h2>Upcoming Projects</h2>
+        <div class="project-card">
+          <h3>Project Title</h3>
+          <p>Description of the upcoming project...</p>
+        </div>
+        <div class="project-card">
+          <h3>Project Title</h3>
+          <p>Description of the upcoming project...</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="completed-projects" class="completed-projects">
+      <div class="container">
+        <h2>Completed Projects</h2>
+        <div class="project-card">
+          <h3>Project Title</h3>
+          <p>Description of the completed project...</p>
+        </div>
+        <div class="project-card">
+          <h3>Project Title</h3>
+          <p>Description of the completed project...</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="register" class="register">
+      <div class="container">
+        <h2>Register</h2>
+        <form class="register-form">
+          <input type="text" placeholder="Full Name" required />
+          <input type="email" placeholder="Email Address" required />
+          <input type="password" placeholder="Password" required />
+          <input type="number" placeholder="Graduation year" />
+          <button type="submit" class="btn">Register</button>
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <p>
+          &copy; 2025 Chayamba Secondary School Alumni. All rights reserved.
+        </p>
+      </div>
+    </footer>
+
+    <script>
+      function sendMessage() {
+        const messageBox = document.getElementById("messages");
+        const messageInput = document.getElementById("chat-message");
+        const message = messageInput.value;
+        if (message.trim() !== "") {
+          const newMessage = document.createElement("p");
+          newMessage.textContent = message;
+          newMessage.classList.add("chat-bubble");
+          messageBox.appendChild(newMessage);
+          messageInput.value = "";
+          messageBox.scrollTop = messageBox.scrollHeight;
+        }
+      }
+
+      // Handle image upload and display
+      document
+        .getElementById("uploadForm")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
+
+          const imageUpload = document.getElementById("imageUpload");
+          const file = imageUpload.files[0];
+
+          if (file) {
+            const reader = new FileReader();
+            reader.onload = function (e) {
+              const photoGallery = document.getElementById("photo-gallery");
+              const img = document.createElement("img");
+              img.src = e.target.result; // The base64 image data
+              img.alt = "Uploaded Image";
+              photoGallery.appendChild(img);
+            };
+            reader.readAsDataURL(file);
+          }
+        });
+    </script>
+  </body>
+</html>
